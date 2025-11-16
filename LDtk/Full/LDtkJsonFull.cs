@@ -343,7 +343,7 @@ public partial class AutoRuleDef
     public int YOffset { get; set; }
 }
 
-/// <summary> CustomCommand run by LDtk </summary>
+/// <summary> ldtk.CustomCommand </summary>
 public partial class CustomCommand
 {
     /// <summary> Command </summary>
@@ -521,7 +521,6 @@ public partial class EntityDefinition
     /// <summary> Pixel width </summary>
     [JsonPropertyName("width")]
     public int Width { get; set; }
-
 }
 
 /// <summary> Entity instance </summary>
@@ -815,6 +814,7 @@ public partial class FieldDefinition
     [JsonPropertyName("useForSmartColor")]
     public bool UseForSmartColor { get; set; }
 }
+
 /// <summary> Field instance </summary>
 public partial class FieldInstance
 {

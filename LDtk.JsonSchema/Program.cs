@@ -18,8 +18,8 @@ public static partial class Program
 
     static readonly string[] Namespaces = {
         "using System;",
-        "using System.Text.Json.Serialization;",
         "using System.Text.Json;",
+        "using System.Text.Json.Serialization;",
         "",
         "using Microsoft.Xna.Framework;",
     };

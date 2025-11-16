@@ -3,12 +3,13 @@
 Render the prerendered level you created from PrerenderLevel().
 
 ```csharp
-public void RenderPrerenderedLevel(LDtkLevel level)
+public void RenderPrerenderedLevel(LDtkLevel level, float layerDepth = 0)
 ```
 
 | parameter | description |
 | --- | --- |
 | level | Level to prerender |
+| layerDepth | A depth of the layer of this level. |
 
 ## Exceptions
 

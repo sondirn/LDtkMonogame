@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <NoWarn>CA1051</NoWarn>
@@ -11,15 +11,9 @@
 
     <ItemGroup>
         <ProjectReference Include="..\LDtk\LDtk.csproj" />
-        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4" />
-        <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.4" />
+        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
+        <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.4.1" />
     </ItemGroup>
-
-    <!-- <ItemGroup>
-        <Content Include="Content/Characters.png" CopyToOutputDirectory="Always"/>
-        <Content Include="Content/Tilemap.png" CopyToOutputDirectory="Always"/>
-        <Content Include="Content/World.ldtk" CopyToOutputDirectory="Always"/>
-    </ItemGroup> -->
 
     <Target Name="Codegen" BeforeTargets="BeforeBuild">
         <Exec Command="dotnet run --project ../LDtk.Codegen/LDtk.Codegen.csproj -- -n 'LDtkTypes.Shooter' -i Content/Shooter/World.ldtk -o ./LDtkTypes/ --LevelClassName ShooterLevelDataName --PointAsVector2" />
@@ -30,10 +24,5 @@
         <MonoGameContentReference Include="Content\Shooter\Content.mgcb" />
         <MonoGameContentReference Include="Content\Platformer\Content.mgcb" />
     </ItemGroup>
-
-    <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
-        <Message Text="Restoring dotnet tools" Importance="High" />
-        <Exec Command="dotnet tool restore" />
-    </Target>
 
 </Project>

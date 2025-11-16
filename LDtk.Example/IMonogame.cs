@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 
 interface IMonogame
 {
-    public void Initialize();
-    public void Update(GameTime gameTime);
-    public void Draw(GameTime gameTime);
+    void Initialize();
+    void Update(GameTime gameTime);
+    void Draw(GameTime gameTime);
 }

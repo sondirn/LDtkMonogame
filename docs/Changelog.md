@@ -2,7 +2,12 @@
 
 Changelog for versions
 
-## [1.8.0](https://github.com/IrishBruse/LDtkMonogame/compare/v1.6.0...v1.7.0)
+## [1.8.1](https://github.com/IrishBruse/LDtkMonogame/compare/v1.8.0...v1.8.1`)
+
+-   Update MonoGame to v3.8.4.1
+-   Update LDtk.Example to use dotnet 10
+
+## [1.8.0](https://github.com/IrishBruse/LDtkMonogame/compare/v1.7.0...v1.8.0)
 
 -   Update MonoGame to v3.8.4
 

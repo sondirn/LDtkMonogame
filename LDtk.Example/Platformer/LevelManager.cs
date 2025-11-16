@@ -1,4 +1,5 @@
 namespace LDtkMonogameExample.Platformer;
+
 using System;
 using System.Collections.Generic;
 
