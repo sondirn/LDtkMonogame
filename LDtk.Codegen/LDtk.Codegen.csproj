@@ -30,6 +30,7 @@
     <ItemGroup>
         <ProjectReference Include="..\LDtk\LDtk.csproj" />
         <PackageReference Include="CommandLineParser" Version="2.8.0" />
+        <PackageReference Include="MonoGame.Framework.Native" Version="3.8.5" />
     </ItemGroup>
 
     <ItemGroup>
